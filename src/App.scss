@@ -1,0 +1,21 @@
+.myCardText {
+  color: black;
+  &:hover {
+    color: rgb(74, 74, 74);
+  }
+  p {
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.myCard {
+  &:hover {
+    background-color: wheat;
+  }
+}
+footer {
+  text-align: center;
+  margin: 10px;
+}
