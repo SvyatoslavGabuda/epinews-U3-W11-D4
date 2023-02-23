@@ -30,7 +30,7 @@ const ArticleDetails = () => {
       <Container>
         {artDetails && (
           <>
-            <Row>
+            <Row className="my-3">
               <h2>{artDetails.title}</h2>
             </Row>
             <Row>
@@ -44,10 +44,8 @@ const ArticleDetails = () => {
                       <Card.Body>
                         <p>{artDetails.summary}</p>
                         <p>
-                          <>
-                            <span>publiscedAt:</span>{" "}
-                            {format(new Date(artDetails.publishedAt), "d MMMM yyyy - HH:mm")}
-                          </>
+                          <span>publiscedAt:</span>{" "}
+                          {format(new Date(artDetails.publishedAt), "d MMMM yyyy - HH:mm")}
                         </p>
                         <p>
                           {" "}

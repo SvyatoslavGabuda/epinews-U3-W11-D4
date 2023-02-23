@@ -20,6 +20,7 @@ const Article = ({ article }: ArticleProps) => {
               <Card.Title className="my-1">{article.title}</Card.Title>
               <p className="my-1">{article.summary}</p>
               <p className="my-1">
+                {" "}
                 {"UpdatedAt: " + format(new Date(article.updatedAt), "d MMMM yyyy - HH:mm")}
               </p>
             </Col>
